@@ -29,7 +29,7 @@ class Etl
      * @param  Pipeline  $pipeline
      * @return void
      */
-    public function __construct(Container $container = null, Pipeline $pipeline = null)
+    public function __construct(?Container $container = null, Pipeline $pipeline = null)
     {
         $this->container = $container ?? Container::getInstance();
         $this->pipeline = $pipeline ?? new Pipeline;
